@@ -32,6 +32,15 @@ strong {
   font-weight: 600;
 }
 
+/*info style*/
+
+.info {
+  background-color:#fff;
+  padding:25px;
+}
+.info h1{
+  margin-bottom:10px;
+}
 
 /*
  * Button styles
@@ -49,113 +58,170 @@ strong {
   margin: 0 auto;
 }
 
-/*container styles*/
+/*container style*/
+
 .container{
-  display: flex;
-  flex-direction: column;
-}
-/*nav Styles*/
-
-.nav{
-  width:100%;
-  height: 3.75rem;
+  width:90%;
+  margin:0 auto;
 }
 
-.title{
-  color:red;
-  font-weight: bold;
-  width:7.5rem;
-  font-size: 1.5rem;
-  text-align: center;
-  padding:25px;
-  border-right: 1px solid gray;
+.profile{
+  margin:20px 0;
+}
+.dog-details{
+  background-color:#f7f4f4;
+}
+/*logo Styles*/
+
+.logo{
+  border-right:1px solid #cde0e0;
+  height: 60px;
+  width:120px;
 }
 
-.dog-hero{
+.hero img{
   width:100%;
 }
 
-.dog-hero img{
-  width:100%;
-}
+/*info style*/
 
 .info{
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- font-family: 'Open Sans', sans-serif;
- font-size:14px;
- padding:30px;
+  text-align: center;
 }
 
-.info .owner{
-  width:90px;
-  height: 90px;
+
+.info .owner-details img{
   border-radius: 50%;
 }
 
-.info .name{
+.info .owner-details {
+  font-size: 14px;
+  color:909597;
+
+}
+
+.info .owner-details .name{
   font-weight: bold;
 }
 
-.owner-info{
-  margin:20px;
-  display: flex;
-  flex-direction: column;
+.info .pet-details{
+   width:100%;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.info .pet-details h1{
+  font-size: 22px;
+  color:#666a6c;
+  font-weight: 600;
+}
+
+.info .pet-details .icons{
+  width:100%;
+  padding: 20px;
+  display:flex;
+  justify-content: space-around;
   align-items: center;
 }
 
-.ability{
-  margin:20px;
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.detail h1{
-  font-size:1.5rem;
-  font-weight: normal;
-}
-
-.detail h2{
-  font-style: 1rem;
-}
-.booking{
-  text-align: center;
-}
-
-.booking h2{
+.booking .price{
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.booking .btn{
-  font-family: 'Open Sans', sans-serif;
-  font-size:1rem;
-  color:#fff;
-  background-color:#ff595f;
-  width: 15em;
-  height:40px;
-
+/*hr style*/
+hr{
+  width:95%;
+  height:1px;
 }
 
-@media only screen and (min-width:1100px){
-  .dog-hero img{
-    height:600px;
+
+/*dog-details sections*/
+.dog-details{
+  margin:0 20px;
+}
+
+.dog-details .about{
+  padding:10px 0;
+  line-height: 1.5;
+  letter-spacing: 1.4;
+}
+
+.dog-details .about h3{
+  font-size:1.2rem;
+  text-align: center;
+  margin:20px;
+}
+
+.dog-details .care,.dog-details .game,.card > *, .game > *{
+  line-height: 1.5;
+  padding: 10px 0;
+}
+
+.dog-details .game img{
+  margin-right: 10px;
+}
+.contact{
+  text-align: center;
+  color:#ff6363;
+}
+
+
+.care{
+  display: flex;
+  flex-direction: column;
+}
+
+.dog-details .images img{
+  width: 100%;
+   margin-top: 20px;
+}
+
+@media only screen and (min-width: 1060px){
+  .container{
+    width:90%;
+    margin:0 auto;
   }
 
-  .info{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+  .profile{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
   }
 
-  .info > *{
-    margin:30px;
+  .details{
+    width:70%;
+    display: flex;
+  }
+
+  .info .profile .details .pet-details .icons{
+    width:60%;
+    display:flex;
+    align-items:space-around;
   }
 
   .dog-details .care{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .dog-details .game{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 62%;
+  }
+
+  .dog-details .images{
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+  } 
+  .dog-details .images img{
+    width: 33%;
+
   }
 }
+
